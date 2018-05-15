@@ -1,7 +1,8 @@
-import { attr, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import { alias } from '@ember-decorators/object/computed';
 import { buildValidations, validator } from 'ember-cp-validations';
 import DS from 'ember-data';
+import { hasMany } from 'ember-osf-web/decorators/data';
 import File from './file';
 import Institution from './institution';
 import Node from './node';

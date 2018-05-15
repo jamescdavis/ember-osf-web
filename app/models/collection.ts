@@ -1,5 +1,6 @@
-import { attr, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import DS from 'ember-data';
+import { hasMany } from 'ember-osf-web/decorators/data';
 import Node from 'ember-osf-web/models/node';
 import Registration from 'ember-osf-web/models/registration';
 import OsfModel from './osf-model';

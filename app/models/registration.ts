@@ -1,5 +1,6 @@
-import { attr, belongsTo, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import DS from 'ember-data';
+import { belongsTo, hasMany } from 'ember-osf-web/decorators/data';
 import Comment from './comment';
 import Contributor from './contributor';
 import Node from './node';

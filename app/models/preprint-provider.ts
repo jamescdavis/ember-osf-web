@@ -1,6 +1,7 @@
-import { attr, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import { alias } from '@ember-decorators/object/computed';
 import DS from 'ember-data';
+import { hasMany } from 'ember-osf-web/decorators/data';
 import License from './license';
 import OsfModel from './osf-model';
 import Preprint from './preprint';

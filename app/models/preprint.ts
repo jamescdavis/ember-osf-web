@@ -1,7 +1,8 @@
-import { attr, belongsTo, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import { computed } from '@ember-decorators/object';
 import { alias } from '@ember-decorators/object/computed';
 import DS from 'ember-data';
+import { belongsTo, hasMany } from 'ember-osf-web/decorators/data';
 import Contributor from './contributor';
 import File from './file';
 import License from './license';

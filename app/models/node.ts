@@ -1,8 +1,9 @@
-import { attr, belongsTo, hasMany } from '@ember-decorators/data';
+import { attr } from '@ember-decorators/data';
 import { bool, equal } from '@ember-decorators/object/computed';
 import { buildValidations, validator } from 'ember-cp-validations';
 import DS from 'ember-data';
 
+import { belongsTo, hasMany } from 'ember-osf-web/decorators/data';
 import authenticatedAJAX from 'ember-osf-web/utils/ajax-helpers';
 
 import BaseFileItem from './base-file-item';
