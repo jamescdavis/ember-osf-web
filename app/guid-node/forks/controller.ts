@@ -2,18 +2,20 @@ import { action, computed } from '@ember-decorators/object';
 import { readOnly } from '@ember-decorators/object/computed';
 import { service } from '@ember-decorators/service';
 import Controller from '@ember/controller';
-import Analytics from 'ember-osf-web/services/analytics';
-
 import I18N from 'ember-i18n/services/i18n';
-import Node from 'ember-osf-web/models/node';
-import StatusMessages from 'ember-osf-web/services/status-messages';
 import Toast from 'ember-toastr/services/toast';
+
+import Node from 'ember-osf-web/models/node';
+import Analytics from 'ember-osf-web/services/analytics';
+import CurrentUser from 'ember-osf-web/services/current-user';
+import StatusMessages from 'ember-osf-web/services/status-messages';
 
 export default class GuidNodeForks extends Controller {
     @service toast!: Toast;
     @service i18n!: I18N;
     @service statusMessages!: StatusMessages;
     @service analytics!: Analytics;
+    @service currentUser!: CurrentUser;
 
     toDelete: Node | null = null;
     deleteModal = false;
