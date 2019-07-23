@@ -128,9 +128,6 @@ module.exports = function(defaults) {
                 /* eslint-enable max-len */
             },
         },
-        'ember-cli-babel': {
-            includePolyfill: IS_PROD,
-        },
         assetLoader: {
             generateURI(filePath) {
                 return config.assetsPrefix.replace(/\/$/, '') + filePath;
