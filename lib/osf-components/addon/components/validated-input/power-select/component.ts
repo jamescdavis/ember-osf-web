@@ -1,4 +1,4 @@
-import { action } from '@ember-decorators/object';
+import { action } from '@ember/object';
 import DS, { AttributesFor } from 'ember-data';
 
 import { layout } from 'ember-osf-web/decorators/component';

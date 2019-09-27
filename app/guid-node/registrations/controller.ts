@@ -1,7 +1,7 @@
-import { action, computed } from '@ember-decorators/object';
-import { alias } from '@ember-decorators/object/computed';
-import { service } from '@ember-decorators/service';
 import Controller from '@ember/controller';
+import { action, computed } from '@ember/object';
+import { alias } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
 import { task } from 'ember-concurrency';
 import DS from 'ember-data';
 import config from 'ember-get-config';

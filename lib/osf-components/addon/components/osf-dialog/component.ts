@@ -1,8 +1,8 @@
 import { tagName } from '@ember-decorators/component';
-import { action } from '@ember-decorators/object';
-import { or } from '@ember-decorators/object/computed';
-import { service } from '@ember-decorators/service';
 import Component from '@ember/component';
+import { action } from '@ember/object';
+import { or } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
 
 import { layout } from 'ember-osf-web/decorators/component';
 import defaultTo from 'ember-osf-web/utils/default-to';

@@ -1,12 +1,13 @@
 import Ember from 'ember';
 
-import { action, computed } from '@ember-decorators/object';
-import { not } from '@ember-decorators/object/computed';
-import { service } from '@ember-decorators/service';
 import Component from '@ember/component';
+import { action, computed } from '@ember/object';
+import { not } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
 import calculatePosition from 'ember-basic-dropdown/utils/calculate-position';
-import defaultTo from 'ember-osf-web/utils/default-to';
 import Media from 'ember-responsive';
+
+import defaultTo from 'ember-osf-web/utils/default-to';
 
 export default class ResponsiveDropdown extends Component {
     @service media!: Media;

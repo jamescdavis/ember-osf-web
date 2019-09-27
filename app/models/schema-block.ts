@@ -1,6 +1,10 @@
-import { attr } from '@ember-decorators/data';
+import DS from 'ember-data';
+
 import { SchemaBlock, SchemaBlockType } from 'ember-osf-web/packages/registration-schema';
+
 import OsfModel from './osf-model';
+
+const { attr } = DS;
 
 export default class SchemaBlockModel extends OsfModel implements SchemaBlock {
     @attr('string') blockType?: SchemaBlockType;

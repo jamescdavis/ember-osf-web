@@ -1,11 +1,12 @@
-import { attr, hasMany } from '@ember-decorators/data';
-import { computed } from '@ember-decorators/object';
+import { computed } from '@ember/object';
 import DS from 'ember-data';
 
 import NodeModel from './node';
 import OsfModel from './osf-model';
 import RegistrationModel from './registration';
 import UserModel from './user';
+
+const { attr, hasMany } = DS;
 
 /* eslint-disable camelcase */
 export interface Assets {

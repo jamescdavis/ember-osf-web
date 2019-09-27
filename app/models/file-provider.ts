@@ -1,9 +1,10 @@
-import { attr, belongsTo, hasMany } from '@ember-decorators/data';
 import DS from 'ember-data';
 
 import BaseFileItem from './base-file-item';
 import FileModel from './file';
 import NodeModel from './node';
+
+const { attr, belongsTo, hasMany } = DS;
 
 export default class FileProviderModel extends BaseFileItem {
     @attr('fixstring') name!: string;

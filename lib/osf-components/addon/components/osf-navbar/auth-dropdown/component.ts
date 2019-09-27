@@ -1,9 +1,8 @@
 import { tagName } from '@ember-decorators/component';
-import { action, computed } from '@ember-decorators/object';
-import { alias } from '@ember-decorators/object/computed';
-import { service } from '@ember-decorators/service';
 import Component from '@ember/component';
-import { Registry as Services } from '@ember/service';
+import { action, computed } from '@ember/object';
+import { alias } from '@ember/object/computed';
+import { inject as service, Registry as Services } from '@ember/service';
 import Features from 'ember-feature-flags/services/features';
 import config from 'ember-get-config';
 import I18N from 'ember-i18n/services/i18n';
@@ -17,6 +16,7 @@ import cleanURL from 'ember-osf-web/utils/clean-url';
 import defaultTo from 'ember-osf-web/utils/default-to';
 import param from 'ember-osf-web/utils/param';
 import pathJoin from 'ember-osf-web/utils/path-join';
+
 import styles from './styles';
 import template from './template';
 

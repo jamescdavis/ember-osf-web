@@ -1,7 +1,6 @@
-import { computed } from '@ember-decorators/object';
 import { A } from '@ember/array';
 import Component from '@ember/component';
-
+import { computed } from '@ember/object';
 import fade from 'ember-animated/transitions/fade';
 import { toLeft, toRight } from 'ember-animated/transitions/move-over';
 

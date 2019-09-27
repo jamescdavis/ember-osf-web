@@ -1,8 +1,10 @@
-import { attr } from '@ember-decorators/data';
-import { computed } from '@ember-decorators/object';
-import { or } from '@ember-decorators/object/computed';
+import { computed } from '@ember/object';
+import { or } from '@ember/object/computed';
+import DS from 'ember-data';
 
 import OsfModel from './osf-model';
+
+const { attr } = DS;
 
 enum FileItemKinds {
     File = 'file',

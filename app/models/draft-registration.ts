@@ -1,10 +1,11 @@
-import { attr, belongsTo } from '@ember-decorators/data';
 import DS from 'ember-data';
 
 import NodeModel from './node';
 import OsfModel from './osf-model';
 import RegistrationSchemaModel, { RegistrationMetadata } from './registration-schema';
 import UserModel from './user';
+
+const { attr, belongsTo } = DS;
 
 export default class DraftRegistrationModel extends OsfModel {
     @attr('fixstring') registrationSupplement!: string;
